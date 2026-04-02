@@ -74,3 +74,17 @@ public:
         return *this;
     }
 };
+//added a main, so that code can compile 
+int main() {
+    NodeList list;
+    list.addNode(1, "c");
+    list.addNode(2, "B");
+    list.addNode(3, "e");
+    list.display();
+    list.removeNode(2);
+    list.display();
+    NodeList copy = list;
+    copy.display();
+
+    return 0;
+}
